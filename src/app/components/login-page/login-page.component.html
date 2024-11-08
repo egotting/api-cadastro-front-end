@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-widtweah, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body class="bg-black">
+    <!--LOGIN FORM-->
+    <main class="flex justify-center items-center h-screen">
+      <div class="w-96 p-6 shadow-2xl shadow-gray-600 bg-gray-200 rounded-md">
+        <!--EMAIL FORM-->
+        <div class="flex justify-center items-center m-1 mb-8">
+          <h2 class="text-black font-bold">Login</h2>
+        </div>
+        <div class="border-black">
+          <label for="email" class="ml-4 font-bold">Email </label>
+          <input
+            class="border 6 bg-gray-200 border-black p-1 m-2 ml-5 peer ..."
+            type="email"
+            id="email"
+            pattern=".+@example\.com"
+            size="34"
+            name="email"
+            placeholder="Coloque seu email"
+            required
+          />
+        </div>
+        <!--PASSWORD FORM-->
+        <div>
+          <label for="pwd" class="ml-4 font-bold">Password </label>
+          <input
+            class="border 6 bg-gray-200 border-black p-1 m-2 ml-5"
+            type="password"
+            id="pwd"
+            size="34"
+            name="Password"
+            minLength="8"
+            placeholder="Coloque sua senha"
+            required
+          />
+        </div>
+        <!--BUTTON FORM-->
+        <div class="w-full h-15 mt-5 flex justify-center">
+          <button
+            class="p-3 pl-20 pr-20 bg-black text-white text-center hover:bg-gray-800"
+          >
+            <a href="">Login</a>
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="/register"
+            target="_blank"
+            class="text-gray-500 hover:text-black underline"
+            ><p>Crie a sua conta</p></a
+          >
+          <a
+            href="#"
+            target="_blank"
+            class="ml-12 text-gray-500 hover:text-black underline"
+            ><p>Precisa de ajuda?</p></a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
